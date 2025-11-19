@@ -1,0 +1,5 @@
+{
+  "name": "Arduino LED FX Gen",
+  "description": "Generates Arduino C++ code for custom LED patterns using Gemini 2.5, complete with a live browser-based preview simulation.",
+  "requestFramePermissions": []
+}
