@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1WZrlb55T_Mo9OfNqgqDXXz0YNPPpsLSh
+https://media1.giphy.com/media/mFDWuDppjQJjite6FS/giphy.gif
 
 ## Run Locally
 
