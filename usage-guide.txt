@@ -1,0 +1,48 @@
+==============================================================================
+                           ARDUINO-FX-GEN USAGE GUIDE
+==============================================================================
+
+NAME
+    arduino-fx-gen - A CLI tool to generate effect code for Arduino projects.
+
+SYNOPSIS
+    arduino-fx-gen [COMMAND] [OPTIONS]
+
+DESCRIPTION
+    arduino-fx-gen automates the creation of C++ code for Arduino visual 
+    (LED) and audio effects. It generates ready-to-compile .ino files or 
+    headers based on parameters provided via the command line.
+
+COMMANDS
+    new <name>      Create a new effect project with the given name.
+    generate        Generate the code for a specific effect type.
+    list            List all available effect presets.
+    help            Show this usage guide.
+
+OPTIONS
+    -t, --type      Effect type (e.g., rainbow, blink, fade, noise).
+    -p, --pin       Arduino pin number (default: 6).
+    -l, --leds      Number of LEDs/pixels (default: 30).
+    -s, --speed     Effect speed in ms (default: 100).
+    -o, --output    Output filename (default: effects.ino).
+    -v, --verbose   Enable verbose output for debugging.
+
+EXAMPLES
+    1. Generate a basic rainbow effect for 60 LEDs on pin 6:
+       $ arduino-fx-gen generate --type rainbow --leds 60 --pin 6
+
+    2. Create a 'breathing' effect and save to specific file:
+       $ arduino-fx-gen generate --type breathe --speed 50 -o my_project.ino
+
+    3. List all available effect types:
+       $ arduino-fx-gen list
+
+INSTALLATION
+    1. Ensure Python 3.x (or your specific runtime) is installed.
+    2. Clone the repository or download the script.
+    3. Run 'pip install -r requirements.txt' if applicable.
+    4. Make the script executable: chmod +x arduino-fx-gen
+
+NOTES
+    - Ensure your Arduino libraries (e.g., FastLED, Adafruit_NeoPixel) are 
+      installed in your Arduino IDE before compiling the output.
